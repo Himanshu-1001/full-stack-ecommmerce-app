@@ -1,0 +1,13 @@
+@import "../../css-config/mixins.scss";
+
+.popular-products-section{
+    h1{
+        text-align: center;
+    }
+    .container{
+        display: grid;
+        grid-template-columns: auto auto auto auto;
+        align-items: center;
+        justify-content: center;
+    }
+}

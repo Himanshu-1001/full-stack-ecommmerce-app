@@ -1,0 +1,51 @@
+@import "../../css-config/mixins.scss";
+
+.main-header{
+    height: 75px;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    background-color: #212121;
+    color: white;
+
+    h1{
+        display: none;
+        @include md{
+            display: block;
+        }
+    }
+    ul{
+        display: flex;
+        align-items: center;
+        gap: 10px;
+        // justify-content: space-around;
+        list-style: none;
+
+        @include md{
+            gap: 20px;
+        }
+    }
+
+    .nav-icons{
+        display: flex;
+        justify-content: space-around;
+        gap: 20px;
+    }
+
+    svg{
+        font-size: 20px;
+    }
+
+    .cart-icon{
+        position: relative;
+        span{
+            position: absolute;
+            top: -5px;
+            right: -15px;
+            background-color: #974072;
+            border-radius: 42px;
+            text-align: center;
+            min-width: 20px;
+        }
+        }
+}
