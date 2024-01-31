@@ -4,9 +4,10 @@ import Category from './Category/Category';
 import Products from '../Products/Products';
 
 import { useContext, useEffect, useState } from 'react';
-import fetchData from '../../utils/api';
-
 import { Context } from '../../utils/context';
+import fetchData from '../../utils/api';
+// import useFetch from '../../hooks/useFetch';
+
 
 const Home = () => {
     const {catArr, setCatArr, products, setProducts} = useContext(Context);
@@ -39,7 +40,9 @@ const Home = () => {
     return (
         <div>
             <Banner />
+            <h2>Categories</h2>
             <Category categories={catArr} />
+            <h2>Popular Products</h2>
             <Products products={products} />
         </div>
     );

@@ -1,1 +1,20 @@
 @import "../../css-config/mixins.scss";
+
+// Category.scss
+
+.products-category-section {
+    padding: 20px;
+    
+    .category-container {
+      max-width: 1200px;
+      margin: 0 auto;
+      
+      h1 {
+        font-size: 34px;
+        color: #8e2341;
+        margin-top: 20px;
+        text-align: center;
+      }
+    }
+  }
+  
