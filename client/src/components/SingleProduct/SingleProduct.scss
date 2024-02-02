@@ -34,6 +34,40 @@
     font-size: 16px;
     margin-bottom: 20px;
   }
+
+  .quantity-section {
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+  }
+  
+  .quantity-button {
+    padding: 5px 10px;
+    font-size: 16px;
+    border: none;
+    border-radius: 5px;
+    background-color: #ccc;
+    color: #333;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  
+    &:hover {
+      background-color: #ddd;
+    }
+  
+    &:first-child {
+      margin-right: 10px;
+    }
+  
+    &:last-child {
+      margin-left: 10px;
+    }
+  }
+  
+  .quantity {
+    font-size: 16px;
+    margin: 0 10px;
+  }
   
   .add-to-cart {
     padding: 10px 20px;
