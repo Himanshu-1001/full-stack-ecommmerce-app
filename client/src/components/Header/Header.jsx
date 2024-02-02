@@ -6,15 +6,16 @@ import { useContext, useState } from "react";
 import Cart from "../Cart/Cart";
 import Search from "./Search/Search";
 import { Context } from "../../utils/context";
-
+import { useNavigate } from "react-router-dom";
 
 const Header = () => {
     const [showCart, setShowCart] = useState(false);
-    const [showSearch, setShowSearch] = useState(false);
+    // const [showSearch, setShowSearch] = useState(false);
     
     const {cartTotalItems}  = useContext(Context);
 
-
+    const navigate = useNavigate();
+    
     function handleCart(){
         if(showCart===false){
             setShowCart(true);
@@ -26,15 +27,16 @@ const Header = () => {
     return (
         <>
             <header className="main-header">
-                <h1>My Store</h1>
+                <h1 onClick={() => navigate('/')}>My Store</h1>
                 <ul>
-                    <li>Home</li>
+                    <li onClick={() => navigate('/')}>Home</li>
                     <li>About</li>
                     <li>Categories</li>
                 </ul>
                 <div className="nav-icons">
                     <IoSearch onClick={() =>{
-                        setShowSearch(true);
+                        navigate('/search')
+                        // setShowSearch(true);
                     }}/>
                     <span className="cart-icon" onClick={handleCart}>
                         <FaCartPlus />
@@ -46,7 +48,6 @@ const Header = () => {
             </header>
 
             {showCart && <Cart cart={handleCart} />}
-            {showSearch && <Search search={setShowSearch} />}
             
         </>
     )

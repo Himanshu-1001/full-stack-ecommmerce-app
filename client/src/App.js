@@ -10,6 +10,7 @@ import Newsletter from './components/Footer/Newsletter/Newsletter'
 import Footer from './components/Footer/Footer'
 
 import AppState from "./utils/context";
+import Search from "./components/Header/Search/Search";
 
 function App() {
     return(
@@ -20,6 +21,7 @@ function App() {
                     <Route path="/" element={<Home />}  />
                     <Route path="/categories/:id" element={<Category />}  />
                     <Route path="/products/:id" element={<SingleProduct />}  />
+                    <Route path="/search" element={<Search />} />
                 </Routes>
                 <Newsletter />
                 <Footer />

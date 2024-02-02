@@ -25,6 +25,13 @@
         @include md{
             gap: 20px;
         }
+
+        li{
+            cursor: pointer;
+        }
+
+
+
     }
 
     .nav-icons{
