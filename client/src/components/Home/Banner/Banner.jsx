@@ -5,10 +5,10 @@ const Banner = () => {
         <section className="banner-section">
             <div className="banner-content">
                 <img src={banner} alt="Banner" className="banner-image" />
-                {/* <div className="banner-buttons">
+                <div className="banner-buttons">
                     <button className="btn-primary">Explore</button>
                     <button className="btn-secondary">Learn More</button>
-                </div> */}
+                </div>
             </div>
         </section>
     );

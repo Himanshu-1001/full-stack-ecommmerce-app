@@ -30,8 +30,8 @@ const Header = () => {
                 <h1 onClick={() => navigate('/')}>My Store</h1>
                 <ul>
                     <li onClick={() => navigate('/')}>Home</li>
-                    {/* <li>About</li>
-                    <li>Categories</li> */}
+                    <li onClick={() => navigate('/')}>About</li>
+                    <li onClick={() => navigate('/')}>Categories</li>
                 </ul>
                 <div className="nav-icons">
                     <IoSearch onClick={() =>{
