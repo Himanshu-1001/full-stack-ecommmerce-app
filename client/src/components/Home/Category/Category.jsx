@@ -10,7 +10,7 @@ const Category = (props) => {
     return (
 
         <div className="category-section">
-            {props.categories.map((item) => {
+            {props.categories?.map((item) => {
                 return <div key={item.id} className="category" onClick={() => navigate(`/categories/${item.id}`)}>
                     <img src={process.env.REACT_APP_BASE_URL + item.attributes.img.data.attributes.url} alt="" />
                 </div>

@@ -42,10 +42,12 @@
 
     svg{
         font-size: 20px;
+        cursor: pointer;
     }
 
     .cart-icon{
         position: relative;
+        cursor: pointer;
         span{
             position: absolute;
             top: -5px;

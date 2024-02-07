@@ -4,7 +4,7 @@ import { FaCartPlus } from "react-icons/fa";
 import { useContext, useState } from "react";
 
 import Cart from "../Cart/Cart";
-import Search from "./Search/Search";
+// import Search from "./Search/Search";
 import { Context } from "../../utils/context";
 import { useNavigate } from "react-router-dom";
 
@@ -30,8 +30,8 @@ const Header = () => {
                 <h1 onClick={() => navigate('/')}>My Store</h1>
                 <ul>
                     <li onClick={() => navigate('/')}>Home</li>
-                    <li>About</li>
-                    <li>Categories</li>
+                    {/* <li>About</li>
+                    <li>Categories</li> */}
                 </ul>
                 <div className="nav-icons">
                     <IoSearch onClick={() =>{

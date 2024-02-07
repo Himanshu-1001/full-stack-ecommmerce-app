@@ -23,7 +23,7 @@ const CartItem = ({id, img, Title, Price, qty}) => {
                         <button className="quantity-btn increment" onClick={() => handleCartQuantityControl("inc", id)}>+</button>
                     </div>
                 </div>
-                <div className="close-icon">
+                <div className="items-close-icon">
                     <RiCloseLine onClick={() => handleRemoveFromCart(id)}/>
                 </div>
             </div>
